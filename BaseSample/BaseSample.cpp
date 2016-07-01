@@ -16,10 +16,20 @@ void printPages()
 	cout << '\n';
 }
 
+// 前增1运算符的示例
+void printBeforeIncrement()
+{
+	cout << "前增1运算符" << endl;
+	int a = 1, b = 2, result;
+	result = (a)+(++b);   // result现在的取值为4
+	cout << result << "\n";
+}
+
 int main()
 {
 	printPages();
-	
+	printBeforeIncrement();
+
 	return 0;
 }
 
